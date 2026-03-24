@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-image: url("banner2.jpg");
+  background-color: rgb(43, 248, 231);
   color: white;
   padding: 5rem;
   text-align: center;
@@ -106,7 +106,7 @@ footer {
   margin-top: 2rem;
   padding: 1rem;
   font-size: 0.9rem;
-  color: #777;
+  color: #777777;
   text-align: center;
 }
 
