@@ -6,8 +6,8 @@ body {
 }
 
 header {
-  background-image: url("banner1.jpg");
-  color: rgb(135, 250, 250);
+  background-image: url("banner5.jpg");
+  color: rgb(157, 21, 190);
   padding: 3rem;
   text-align: center;
 }
@@ -57,7 +57,7 @@ p {
 }
 
 a {
-  color: #83ddf3;
+  color: #e300f8;
   text-decoration: none;
 }
 
