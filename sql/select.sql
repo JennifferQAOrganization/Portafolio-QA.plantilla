@@ -2,29 +2,41 @@ Consultar todos los datos:
   SELECT * FROM form;
 
 Filtrar por nombre ana.
-  SELECT * FROM form WHERE name='Ana';
+  SELECT * FROM form 
+  WHERE name='Ana';
   
 Filtrar por nombre vacío.
-  SELECT * FROM form WHERE name IS NULL;
+  SELECT * FROM form 
+  WHERE name IS NULL;
   
 Filtrar por nombre que empiece por a.
-  SELECT * FROM form WHERE name LIKE 'A%';
+  SELECT * FROM form 
+  WHERE name LIKE 'A%';
   
 Filtrar por edad entre 20 y 30.
-  SELECT * FROM form WHERE age BETWEEN 20 AND 30;
+  SELECT * FROM form 
+  WHERE age BETWEEN 20 AND 30;
   
 Filtrar por asunto job e information.
-
+  SELECT * FROM form 
+  WHERE subject LIKE '%job%'
+  OR subject LIKE '%information%';
   
 Filtrar por nombre maria o ana.
-
+  SELECT * FROM form 
+  WHERE name IN ('Maria', 'Ana');
   
 Filtrar por email que contenga gmail y asunto job.
-
+  SELECT * FROM form 
+  WHERE email LIKE '%gmail%'
+  AND subject LIKE '%job%';
 
 Filtrar por edad mayor a 30 y mensaje que contenga test.
-
+  SELECT * FROM form 
+  WHERE age > 30
+  AND message ILIKE '%test%';
   
 Mostrar los datos ordenados por email de la A a la Z.
-
+  SELECT * FROM form 
+  ORDER BY email ASC;
 
