@@ -10,3 +10,4 @@ VALUES
 ('Ana', 'ana.test@mail.com', 'information', 28, 'mensaje con test'),
 (NULL, 'contact@gmail.com', 'job', 40, 'test email gmail'),
 ('Laura', 'laura@mail.com', 'other', 19, 'mensaje final test')
+;
