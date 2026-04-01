@@ -16,15 +16,32 @@ Filtrar por nombre que empiece por a.
 Filtrar por edad entre 20 y 30.
   SELECT * FROM form 
   WHERE age BETWEEN 20 AND 30;
-  
+
+------ OTRA MANERA ------
+  WHERE AGE >= 20 AND AGE <=30; 
+
+
 Filtrar por asunto job e information.
   SELECT * FROM form 
   WHERE subject LIKE '%job%'
   OR subject LIKE '%information%';
-  
+
+------ OTRA MANERA ------
+  WHERE AGE >= 20 AND AGE <=30; 
+  WHERE SUBJECT IN ('JOB', 'INFORMATION');
+
+------ OTRA MANERA ------
+  WHERE AGE >= 20 AND AGE <=30; 
+  WHERE SUBJECT ='JOB' OR 'INFORMATION';
+
+
 Filtrar por nombre maria o ana.
   SELECT * FROM form 
   WHERE name IN ('Maria', 'Ana');
+
+------ OTRA MANERA ------
+  WHERE AGE >= 20 AND AGE <=30; 
+  WHERE NAME IN ('MARIA', 'ANA');
   
 Filtrar por email que contenga gmail y asunto job.
   SELECT * FROM form 
@@ -34,7 +51,7 @@ Filtrar por email que contenga gmail y asunto job.
 Filtrar por edad mayor a 30 y mensaje que contenga test.
   SELECT * FROM form 
   WHERE age > 30
-  AND message ILIKE '%test%';
+  AND message LIKE '%test%';
   
 Mostrar los datos ordenados por email de la A a la Z.
   SELECT * FROM form 
