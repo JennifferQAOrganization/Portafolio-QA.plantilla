@@ -1,7 +1,7 @@
 Cambiar el email de laura por lauratest@gmail.com.
   UPDATE form
   SET email = 'lauratest@gmail.com'
-  WHERE id = 10;
+  WHERE name = 'Laura';
   
 Cambiar edad 20 por 21.
   UPDATE form
